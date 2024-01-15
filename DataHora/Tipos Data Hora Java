@@ -1,0 +1,16 @@
+Pricipais Tipo Java
+
+
+Data-hora local
+	LocalDate
+	LocalDateTime
+	
+Data-hora Global
+	Instant
+
+Duração
+	Duration
+
+Outros
+	ZoneId
+	ChronoUnit

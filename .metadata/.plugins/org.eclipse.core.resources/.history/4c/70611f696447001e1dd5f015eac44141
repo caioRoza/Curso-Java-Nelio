@@ -1,0 +1,35 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Pessoa;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Quantas pessoas serao digitadas? ");
+		
+		int n = sc.nextInt();
+		Pessoa[] vect = new Pessoa[n];
+		
+		for (int i = 0; i < vect.length; i++) {
+			sc.nextLine();
+			System.out.println("Dados da " + (i+1) + "a pessoa:");
+			String name = sc.nextLine();
+			int age = sc.nextInt();
+			double heigth = sc.nextDouble();
+			vect[i] = new Pessoa(name, age, heigth);
+			
+		}
+		
+		
+		sc.close();
+
+	}
+
+}

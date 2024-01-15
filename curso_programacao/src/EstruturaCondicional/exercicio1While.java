@@ -1,0 +1,22 @@
+package EstruturaCondicional;
+
+import java.util.Scanner;
+
+public class exercicio1While {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int x = sc.nextInt();
+		while (x != 2002) {
+			System.out.println("Senha inválda");
+			x = sc.nextInt();
+			
+		}
+		System.out.println("Acesso permitido");
+		
+		sc.close();
+	}
+
+}
